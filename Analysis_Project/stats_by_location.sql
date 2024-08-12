@@ -1,11 +1,13 @@
 /*
 Grouping by job location, what is:
--number of postings for analyst roles for each location
--the average salary of analyst roles (IGNORE NULL ROWS)
+-number of total postings for analyst roles for each location (INCLUDE NULL SALARIES)
+-the average salary of analyst roles (IGNORE NULL SALARIES)
 Limiting to the top 100 for each query. 
  */
 
 
+
+--Query for number of postings
 SELECT 
     job_location,
     COUNT(*) as counts
@@ -20,7 +22,7 @@ LIMIT 100;
 
 
 
-
+--Query for average salary
 SELECT
     job_location,
     ROUND(AVG(salary_year_avg), 2) as averages

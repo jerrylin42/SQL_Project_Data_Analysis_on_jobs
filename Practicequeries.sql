@@ -21,7 +21,6 @@ allows this actually
 uses CTE to create temporary table with company ID+counts, then combines 
 company data table to add the names.
 
-second one is another way to get same result
 */
 WITH company_job_count AS (
     SELECT company_id, COUNT(*) AS total_jobs FROM job_postings_fact
@@ -33,14 +32,6 @@ FROM company_dim
 LEFT JOIN company_job_count ON company_job_count.company_id = company_dim.company_id
 ORDER BY total_jobs DESC;
 
-
-SELECT company_dim.company_id, 
-    company_dim.name, 
-    COUNT(*) as total_jobs
-FROM company_dim
-LEFT JOIN job_postings_fact ON job_postings_fact.company_id = company_dim.company_id
-GROUP BY company_dim.company_id
-ORDER BY total_jobs DESC;
 
 /*
 count num of data analyst job postings by skill */
