@@ -4,12 +4,12 @@ This is a mini personal/self-learning project I performed using PostgreSQL and V
 You can find all my SQL queries here: [Analysis_Project folder](/Analysis_Project/)
 
 
-### Data Source
-All credit for the dataset comes from Luke Barousse's SQL course found here: [SQL Course](https://www.lukebarousse.com/sql)
+### Data Source (Important!)
+ALL credit for the dataset comes from Luke Barousse's SQL course found here: [SQL Course](https://www.lukebarousse.com/sql)
 
-This jobs dataset is a large set of real-world data jobs (such as data analysts, data engineers, and data scientists) and information about them compiled from 2023, such as skills, salary, location, company, and much more. 
+This jobs dataset is a large set of real-world data jobs (such as data analysts, data engineers, and data scientists) and information about them compiled from 2023, such as skills, salary, location, company, and much more, split across 4 tables and linked with IDs. 
 
-Though I used this provided dataset for my analysis (Also using the import code), I **did not** follow along with the project tutorial's queries (mainly rather using it for inspiration), instead opting to challenge myself by creating and answering my own questions I was interested in. 
+Though I used this provided dataset for my analysis (Also using the provided code for importing the csv data), I **did not** follow along with the project tutorial's queries (mainly rather using it for inspiration), instead opting to challenge myself by creating and answering my own questions I was interested in. 
 
 ### Tools Used
 - PostgreSQL as the database of choice
@@ -386,7 +386,7 @@ FULL OUTER JOIN top10_cloudengineer_skills ON top10_analyst_skills.ranknumber = 
 - For data analysts and scientists, it's good to know visualization skills like Power BI and Tableau. 
 
 # Final Takeaways 
-This is my first SQL project, and I wanted to do this primarily as a way of teaching myself SQL through a more applied setting. I was able to hone my query writing skills and my analytical skills by challenging myself to lay out frameworks and come up with solutions for these questions I had in mind. 
+This is my first SQL project, and I wanted to do this primarily as a way of teaching myself SQL through an informal but applied setting. I was able to hone my query writing skills and my analytical skills by challenging myself to lay out frameworks and come up with solutions for these questions I had in mind. 
 
 I was able to use features like joins, CTEs, rankings, wildcard characters, subqueries, aliases, grouping, and filtering to accomplish my goals, and I feel I've been able to get a solid foundational grasp of what SQL has to offer.
 
