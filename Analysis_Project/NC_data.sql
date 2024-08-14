@@ -1,3 +1,7 @@
+/*
+Which cities in NC has the highest demand for data roles?
+*/
+
 SELECT
     job_location,
     COUNT(*) as job_count,

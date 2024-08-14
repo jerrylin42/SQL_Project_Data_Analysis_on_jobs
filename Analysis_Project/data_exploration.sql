@@ -32,6 +32,3 @@ SELECT job_via, COUNT(*) as postingscount FROM job_postings_fact
 GROUP BY job_via
 ORDER BY postingscount DESC;
 
-
---delete later
-SELECT COUNT(*) FROM job_postings_fact WHERE salary_year_avg IS NOT NULL --22k
